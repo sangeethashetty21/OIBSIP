@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet"><link rel="stylesheet" href="style.css"><title>Dashboard</title></head>
+<body data-page="dashboard" class="locked">
+<div class="dash">
+  <header class="topbar">
+    <div class="me"><div class="avatar" id="avatar">?</div><div><strong id="who"></strong><span>Signed in</span></div></div>
+    <button id="logout" type="button" class="logout">Logout</button>
+  </header>
+  <section class="hero">
+    <h1 id="hello">Welcome!</h1>
+    <p>You are viewing a protected page. Without a valid login, you would be sent back to the login screen.</p>
+  </section>
+  <div class="grid">
+    <div class="tile"><small>Account status</small><b>Active</b></div>
+    <div class="tile"><small>Member since</small><b id="since">-</b></div>
+    <div class="tile"><small>Session started</small><b id="loginTime">-</b></div>
+  </div>
+  <p class="foot">Made by <strong>Sangeeta Shetty</strong> · Oasis Infobyte Internship</p>
+</div>
+<script src="auth.js"></script>
+</body>
+</html>

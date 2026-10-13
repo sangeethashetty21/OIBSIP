@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet"><link rel="stylesheet" href="style.css"><title>Login</title></head>
+<body data-page="login">
+<div class="layout">
+  <aside class="brand">
+    <div class="logo" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="11" width="16" height="10" rx="2"/><path d="M8 11V7a4 4 0 0 1 8 0v4"/></svg></div>
+    <h2>Secure access, made simple</h2>
+    <p>Sign in to reach your protected dashboard.</p>
+    <ul class="points"><li>Passwords are salted and hashed</li><li>Protected dashboard page</li><li>Instant, friendly validation</li></ul>
+    <span class="by">Built by Sangeeta Shetty</span>
+  </aside>
+  <main class="panel">
+    <div class="card" id="card">
+      <h1>Welcome back</h1>
+      <p class="sub">Enter your details to log in.</p>
+      <form id="form" novalidate>
+        <label for="user">Username</label>
+        <input id="user" name="user" autocomplete="username" placeholder="e.g. sangeeta">
+        <label for="pw">Password</label>
+        <div class="field"><input id="pw" name="pw" type="password" autocomplete="current-password" placeholder="Your password"><button type="button" class="toggle" data-toggle="pw">Show</button></div>
+        <button type="submit" class="submit" id="submitBtn">Login</button>
+        <p id="msg" class="msg" role="alert"></p>
+      </form>
+      <p class="alt">New here? <a href="register.html">Create an account</a></p>
+    </div>
+  </main>
+</div>
+<script src="auth.js"></script>
+</body>
+</html>
